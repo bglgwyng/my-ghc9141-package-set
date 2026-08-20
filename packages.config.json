@@ -1,25 +1,16 @@
 {
   "packages": {
+    "array": {},
+    "bytestring": {},
     "containers": {},
-    "servant": {},
-    "mtl": {},
+    "directory": {},
+    "filepath": {},
+    "process": {},
+    "stm": {},
+    "text": {},
+    "time": {},
+    "transformers": {},
     "lens": {},
-    "warp": {},
-    "openai": {},
-    "reflex": {
-      "allow-newer": ["base", "containers", "dependent-map", "template-haskell"]
-    },
-    "dependent-map": {
-      "allow-newer": ["containers"]
-    },
-    "patch": {
-      "allow-newer": ["base", "containers", "dependent-map"]
-    },
-    "cabal-install": {},
-    "hackage-security": {},
-    "megaparsec": {},
-    "QuickCheck": {},
-    "hspec": {},
-    "tasty": {}
+    "mtl": {}
   }
 }
