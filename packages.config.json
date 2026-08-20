@@ -55,7 +55,7 @@
     "pipes-csv": {},
     "pipes-group": {},
     "pipes-safe": {
-      "version": ">= 2.3.5"
+      "allow-newer": ["base"]
     },
     "random": {},
     "reflection": {},
@@ -65,6 +65,15 @@
     "transformers-base": {},
     "vector": {},
     "vector-sized": {},
-    "zlib": {}
+    "zlib": {},
+    "hasktorch": {
+      "allow-newer": ["containers", "template-haskell"]
+    },
+    "libtorch-ffi": {
+      "allow-newer": ["containers", "template-haskell"]
+    },
+    "libtorch-ffi-helper": {
+      "allow-newer": ["ghc"]
+    }
   }
 }
