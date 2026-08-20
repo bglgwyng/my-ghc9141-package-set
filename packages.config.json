@@ -7,7 +7,13 @@
     "warp": {},
     "openai": {},
     "reflex": {
-      "allow-newer": ["base", "containers", "dependent-map", "template-haskell"]
+      "allow-newer": [
+        "base",
+        "containers",
+        "dependent-map",
+        "template-haskell",
+        "time"
+      ]
     },
     "dependent-map": {
       "allow-newer": ["containers"]
@@ -20,6 +26,45 @@
     "megaparsec": {},
     "QuickCheck": {},
     "hspec": {},
-    "tasty": {}
+    "tasty": {},
+    "async": {},
+    "hmatrix": {},
+    "doctest": {},
+    "array": {},
+    "bytestring": {},
+    "cassava": {},
+    "constraints": {},
+    "data-default-class": {},
+    "deepseq": {},
+    "finite-typelits": {},
+    "foldl": {},
+    "ghc-typelits-extra": {},
+    "ghc-typelits-knownnat": {},
+    "ghc-typelits-natnormalise": {},
+    "half": {},
+    "inline-c": {},
+    "JuicyPixels": {},
+    "lens-family-core": {
+      "allow-newer": ["containers"]
+    },
+    "lifted-async": {},
+    "monad-control": {},
+    "pipes": {},
+    "pipes-bytestring": {},
+    "pipes-concurrency": {},
+    "pipes-csv": {},
+    "pipes-group": {},
+    "pipes-safe": {
+      "version": ">= 2.3.5"
+    },
+    "random": {},
+    "reflection": {},
+    "safe-exceptions": {},
+    "stm": {},
+    "template-haskell": {},
+    "transformers-base": {},
+    "vector": {},
+    "vector-sized": {},
+    "zlib": {}
   }
 }
