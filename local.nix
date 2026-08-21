@@ -1,7 +1,4 @@
 { inputs }:
-let
-  servantMultipartPackage = packageName: "${inputs.servant-multipart.outPath}/${packageName}";
-in
 {
   reflex = "${inputs.reflex}";
 }
