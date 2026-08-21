@@ -21,8 +21,6 @@
     "patch": {
       "allow-newer": ["base", "containers", "dependent-map"]
     },
-    "cabal-install": {},
-    "hackage-security": {},
     "megaparsec": {},
     "QuickCheck": {},
     "hspec": {},
@@ -65,15 +63,6 @@
     "transformers-base": {},
     "vector": {},
     "vector-sized": {},
-    "zlib": {},
-    "hasktorch": {
-      "allow-newer": ["containers", "template-haskell"]
-    },
-    "libtorch-ffi": {
-      "allow-newer": ["containers", "template-haskell"]
-    },
-    "libtorch-ffi-helper": {
-      "allow-newer": ["ghc"]
-    }
+    "zlib": {}
   }
 }
