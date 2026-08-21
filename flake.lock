@@ -89,11 +89,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1787325797,
-        "narHash": "sha256-kPdnp3FonOBqKF6VAvz7S2lEYgx+1h/SwH0VQwGhz1w=",
+        "lastModified": 1787329932,
+        "narHash": "sha256-G+f1oI2uj7ZZojBl+rfmesz1wY/mgVfZGMP45ThGJZY=",
         "owner": "bglgwyng",
         "repo": "nix-x-cabal-utils",
-        "rev": "76ceee79ec81a40226a1dcee1de8b14e4a655927",
+        "rev": "3125c704daea82ead3e3821633da306a4eae9663",
         "type": "github"
       },
       "original": {

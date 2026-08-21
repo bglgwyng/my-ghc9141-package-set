@@ -63,6 +63,15 @@
     "transformers-base": {},
     "vector": {},
     "vector-sized": {},
-    "zlib": {}
+    "zlib": {},
+    "hasktorch": {
+      "allow-newer": ["Cabal", "bytestring", "containers", "template-haskell"]
+    },
+    "libtorch-ffi-helper": {
+      "allow-newer": ["ghc"]
+    },
+    "libtorch-ffi": {
+      "allow-newer": ["bytestring", "containers", "template-haskell"]
+    }
   }
 }
