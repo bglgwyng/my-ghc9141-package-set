@@ -6,15 +6,7 @@
     "lens": {},
     "warp": {},
     "openai": {},
-    "reflex": {
-      "allow-newer": [
-        "base",
-        "containers",
-        "dependent-map",
-        "template-haskell",
-        "time"
-      ]
-    },
+    "reflex": {},
     "dependent-map": {
       "allow-newer": ["containers"]
     },
