@@ -60,8 +60,8 @@
                 secure = true;
                 "01-index-tar" = fetch-hackage-index-at {
                   repoUrl = "https://hackage.haskell.org/";
-                  indexState = "2026-08-17T00:00:00Z";
-                  hash = "sha256-MNcMRGEsh4h0PP5ZubeQFEXm+0LZKJhoegzGvB5DUeA=";
+                  indexState = "2026-10-21T00:00:00Z";
+                  hash = "sha256-VtbQPfzTQJg9i9mQpXgrSIWoFZT3cUlspAUDqRKPJEE=";
                 };
                 root-json = inputs.hackage-haskell-org-root-json;
               };

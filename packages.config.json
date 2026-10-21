@@ -64,6 +64,8 @@
     },
     "libtorch-ffi": {
       "allow-newer": ["bytestring", "containers", "template-haskell"]
-    }
+    },
+    "hoogle": {},
+    "cabal-gild": {}
   }
 }

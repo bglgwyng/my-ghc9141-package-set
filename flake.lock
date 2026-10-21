@@ -167,11 +167,11 @@
     "reflex": {
       "flake": false,
       "locked": {
-        "lastModified": 1788017868,
-        "narHash": "sha256-m9aA59cEZzeQoDYt7CSks65lvLzG4GB/+CCVnRd69DQ=",
+        "lastModified": 1792382683,
+        "narHash": "sha256-4cGytq+JjO8/wOFm0YklphZq5jBJ/drysdj6Zg1qD/Q=",
         "owner": "reflex-frp",
         "repo": "reflex",
-        "rev": "c89e20e50475283eeea2d2b484a7551b5758ab83",
+        "rev": "6539cee39bdf547bd3a550d0901471e66a2805c2",
         "type": "github"
       },
       "original": {
