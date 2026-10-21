@@ -85,7 +85,13 @@
             initialPackages = import ghc9141-packages-nix;
 
             nonHackagePackages = { pkgs, haskellLib }: self: super: { };
-            configurationCommon = { pkgs, haskellLib }: self: super: { };
+            configurationCommon = { pkgs, haskellLib }: self: super: {
+              libtorch-ffi = haskellLib.overrideCabal (old: {
+                preConfigure = ''
+                  export LIBTORCH_SKIP_DOWNLOAD=1
+                '';
+              }) super.libtorch-ffi;
+            };
 
             configurationNix = import "${pkgs.path}/pkgs/development/haskell-modules/configuration-nix.nix";
             configurationArm = import "${pkgs.path}/pkgs/development/haskell-modules/configuration-arm.nix";
