@@ -95,7 +95,20 @@
 
             configurationNix = import "${pkgs.path}/pkgs/development/haskell-modules/configuration-nix.nix";
             configurationArm = import "${pkgs.path}/pkgs/development/haskell-modules/configuration-arm.nix";
-            configurationDarwin = import "${pkgs.path}/pkgs/development/haskell-modules/configuration-darwin.nix";
+            configurationDarwin =
+              { pkgs, haskellLib }:
+              pkgs.lib.composeManyExtensions [
+                (import "${pkgs.path}/pkgs/development/haskell-modules/configuration-darwin.nix" {
+                  inherit pkgs haskellLib;
+                })
+                (self: super: {
+                  hasktorch = haskellLib.overrideCabal (old: {
+                    preBuild = (old.preBuild or "") + ''
+                      export DYLD_LIBRARY_PATH="${pkgs.llvmPackages.openmp}/lib''${DYLD_LIBRARY_PATH:+:$DYLD_LIBRARY_PATH}"
+                    '';
+                  }) super.hasktorch;
+                })
+              ];
             configurationWindows = import "${pkgs.path}/pkgs/development/haskell-modules/configuration-windows.nix";
             configurationJS = import "${pkgs.path}/pkgs/development/haskell-modules/configuration-ghcjs-9.x.nix";
           };
